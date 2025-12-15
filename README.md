@@ -8,3 +8,4 @@ Test to check if the config file type works !
 Testing with bug fix !
 
 Testing Cloud Deployment hosted in render!
+Hurray ! Testing Cloud Deployment hosted in render! Try 2
