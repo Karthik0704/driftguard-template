@@ -1,0 +1,17 @@
+name: Golden Template
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      # 👇 YOUR BOT IS LOOKING FOR THIS SPECIFIC STEP
+      - name: Security Scan
+        uses: snyk/actions@v1
+        with:
+          args: --severity-threshold=high
+      
+      - name: Build
+        run: npm run build
