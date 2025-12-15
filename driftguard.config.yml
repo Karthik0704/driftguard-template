@@ -1,0 +1,16 @@
+# DriftGuard Configuration
+# This file tells the bot which repos to manage
+
+version: 1
+source_file: "deploy.yml"
+
+# The list of microservices to enforce
+targets:
+  - "Karthik0704/driftguard-test-target"
+  # You can add more later, e.g.:
+  # - "Karthik0704/payment-service"
+  # - "Karthik0704/auth-service"
+
+# Branch settings
+branch_name: "fix/driftguard-security-update"
+pr_title: "🔒 Security Compliance: Sync with Golden Template"
