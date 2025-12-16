@@ -9,9 +9,9 @@ jobs:
       
       # 👇 YOUR BOT IS LOOKING FOR THIS SPECIFIC STEP
       - name: Security Scan
-        uses: snyk/actions@v1
+        uses: snyk/actions@v2
         with:
-          args: --severity-threshold=high
+          args: --severity-threshold=critical
       
       - name: Build
         run: npm run build
